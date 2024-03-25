@@ -1,37 +1,28 @@
 import './App.css';
-import loginimage from "./assets/ovo.png";
-
+import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import React from 'react';
+import TelaCadastro from './components/paginas/telaEntrar';
+import TelaCadastroFacebook from './components/paginas/telaEntrarFacebook';
+import TelaCadastroGoogle from './components/paginas/telaEntrarGoogle';
+import TelaCadastroCelular from './components/paginas/telaEntrarCelular';
+import TelaCadastroEmail from './components/paginas/telaEntrarEmail';
+import TelaCodigoEmail from './components/paginas/telaCodigoEmail';
+import TelaRestaurantes from './components/paginas/telaRestaurantes';
 
 function App() {
   return (
-    <div className="conteiner">
-      <div className='box imagemTelaLogin'>
-        <img src={loginimage} alt= "login.png"/>
-      </div>
-
-      <div className='box telaLogin'>
-
-        <h1 className="Title">Falta pouco para matar sua fome!</h1>
-
-        <h2 className='subtitle'>Como deseja continuar?</h2>
-
-        <div className='botoesIntegracao'>
-        
-          <button type="button" class="btn btn-primary btn-lg facebook">Facebook</button>
-       
-          <button type="button" class="btn btn-primary btn-lg google">Google</button>
-
-        </div>
-
-        <div className='botoesPadrao'>
-
-            <button type="button" class="btn btn-primary btn-lg celular">Celular</button>
-      
-            <button type="button" class="btn btn-primary btn-lg email">E-mail</button>
-
-        </div>
-      </div>
-
+    <div>
+        <Router>
+                <Routes>
+                    <Route exact path="/" element={<TelaCadastro />} />
+                    <Route path="/cadastro-facebook" element={<TelaCadastroFacebook />} />
+                    <Route path="/cadastro-google" element={<TelaCadastroGoogle />} />
+                    <Route path="/cadastro-celular" element={<TelaCadastroCelular />} />
+                    <Route path="/cadastro-email" element={<TelaCadastroEmail />} />
+                    <Route path="/codigo-email" element={<TelaCodigoEmail />} />
+                    <Route path="/restaurantes" element={<TelaRestaurantes />}/>
+                </Routes>
+        </Router>
     </div>
   );
 }

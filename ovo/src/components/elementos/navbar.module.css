@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    color: white; /* Cor do texto */
+    display: flex;
+    justify-content: space-between; /* Alinhar os itens à esquerda e à direita */
+    align-items: center; /* Alinhar os itens verticalmente ao centro */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+.navbar h1 {
+    margin: 0; /* Remover margem do título */
+}
+
+.navbar a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remover sublinhado dos links */
+    margin-left: 20px; /* Espaçamento entre os links */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Sublinhar os links ao passar o mouse */
+}

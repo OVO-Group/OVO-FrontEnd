@@ -1,120 +1,17 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family:'Times New Roman', Times, serif;
+.card{
+  width: 300px; /* Largura do card */
+  padding: 20px; /* Espaçamento interno */
+  border: 2px solid #ffffff; /* Borda cinza */
+  border-radius: 10px; /* Bordas arredondadas */
+  background-color: #ffffff; /* Cor de fundo */
+  text-align: center; /* Alinhamento do texto ao centro */
+  position: absolute; /* Posicionamento absoluto */
+  top: 50%; /* 50% do topo */
+  left: 50%; /* 50% da esquerda */
+  transform: translate(-50%, -50%); /* Centraliza a div */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #FCCE45;
+body{
+  background-color: #FFD700;
 }
-
-.imagemTelaLogin{
-    background-color: #FCCE45;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 100px;
-    padding-bottom: 100px;
-}
-
-.imagemTelaLogin img {
-    animation: moverDeBaixoParaCima 5s ease-in-out infinite alternate;
-}
-
-@keyframes moverDeBaixoParaCima {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
-
-
-.telaLogin {
-    background-color: #FFF;
-    border-radius: 20px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
-}
-
-.Title {
-    margin-bottom: 20px;
-    font-size: 24px;
-    text-align: center;
-}
-
-.subtitle {
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #666;
-}
-
-.botoesIntegracao button {
-    display: flex;
-    flex-direction: column;   
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.facebook{
-    box-sizing: 100px;
-    width: 400px;
-    background-color: 	#1877F2;
-    border-color: #1877F2;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-
-.facebook:hover {
-    background-color: #135ab6;
-}
-
-.google{
-    width: 400px;
-    background-color: 	#DB4437;
-    border-color: #DB4437;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.google:hover {
-    background-color: #b3382c;
-}
-
-.botoesPadrao button{
-    flex-direction: row;
-    align-items: baseline;
-    margin: 0 20px;
-    width:180px;
-    color:#373737;
-    background-color: #FFF;
-    border-color: #dadada;
-}
-
-.botoesPadrao button:hover{
-    color: #FFF;
-    background-color: #FCCE45;
-    border-color: #FCCE45;
-}
-
-.botoesPadrao button:active{
-    color: #FFF;
-    background-color: #c2a037;
-    border-color: #c2a037;
-}
-
