@@ -1,17 +1,34 @@
 .card{
-  width: 300px; /* Largura do card */
-  padding: 20px; /* Espaçamento interno */
-  border: 2px solid #ffffff; /* Borda cinza */
-  border-radius: 10px; /* Bordas arredondadas */
-  background-color: #ffffff; /* Cor de fundo */
+  width: 400px; /* Largura do card */
+  padding: 50px; /* Espaçamento interno */
+  border: 10px solid #FFD700; /* Borda cinza */
+  border-radius: 280px; /* Bordas arredondadas */
+  background-color: #FFD700; /* Cor de fundo */
   text-align: center; /* Alinhamento do texto ao centro */
   position: absolute; /* Posicionamento absoluto */
   top: 50%; /* 50% do topo */
   left: 50%; /* 50% da esquerda */
   transform: translate(-50%, -50%); /* Centraliza a div */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 body{
-  background-color: #FFD700;
+  background-color: #fdfbeb;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+  color: white;
+  
+  
+}
+
+h2{
+  color: white;
+  font-weight: bold;
 }

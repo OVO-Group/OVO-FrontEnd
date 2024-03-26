@@ -1,8 +1,8 @@
 .navbar {
-    background-color: #333; /* Cor de fundo da barra de navegação */
+    background-color: #FFD700; /* Cor de fundo da barra de navegação */
     color: white; /* Cor do texto */
     display: flex;
-    justify-content: space-between; /* Alinhar os itens à esquerda e à direita */
+    justify-content: left; /* Alinhar os itens à esquerda e à direita */
     align-items: center; /* Alinhar os itens verticalmente ao centro */
     padding: 10px 20px; /* Espaçamento interno */
 }
@@ -19,4 +19,21 @@
 
 .navbar a:hover {
     text-decoration: underline; /* Sublinhar os links ao passar o mouse */
+}
+
+.itensNavBar {
+    border: 1px solid #FFD700;
+    background-color: #FFD700;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none; /* Remover sublinhado */
+    transition: color 1.0s;
+}
+
+.itensNavBar:hover {
+    color: #FFD700;
+    border: 1px solid #fdfae2;
+    background-color: #fdfae2;
+    text-decoration: none !important; /* Remover sublinhado */
 }

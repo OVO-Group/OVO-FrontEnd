@@ -5,10 +5,10 @@ function Navbar() {
     return(
         <div className={styles.navbar}>
             <h1>OVO</h1>
-            <Link to='/restaurante'>Restaurantes</Link>
-            <Link to='/endereco'>Endereços</Link>
-            <Link to='/perfil'>Perfil</Link>
-            <Link to='/sacola'>Sacola</Link>
+            <Link to='/restaurantes' className={styles.itensNavBar}>Restaurantes</Link>
+            <Link to='/enderecos' className={styles.itensNavBar}>Endereços</Link>
+            <Link to='/perfil' className={styles.itensNavBar}>Perfil</Link>
+            <Link to='/sacola' className={styles.itensNavBar}>Sacola</Link>
         </div>
     )
 }
