@@ -1,0 +1,72 @@
+.restaurantes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.restaurantesItem {
+
+    background-color: #ffffff; /* Cor de fundo do cartão */
+    border: 1px solid #ffa600;
+    border-radius: 10px; /* Borda arredondada */
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do cartão */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+}
+
+.restaurantesItem:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+    cursor: pointer;
+}
+
+.restaurantesItem h3 {
+    margin-top: 0;
+    font-size: 1.2rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior entre o título e o conteúdo */
+}
+
+.restaurantesItem p {
+    margin-bottom: 0;
+}
+
+.container h1 {
+    color: #FFD700;
+}
+
+.container p {
+    margin-right: 100px;
+}
+
+
+
+.container button:hover {
+    background-color: rgb(183, 53, 53);
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.buttonContainer button{
+    align-items: center;
+    background-color: rgb(251, 100, 100); 
+    border: 2px solid rgb(251, 100, 100); 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    font-size: 15px; 
+    cursor: pointer; 
+    margin-right: 10px;
+    border-radius: 100px; 
+    transition: background-color 0.3s, color 0.3s; 
+    margin-top: 20px;
+    width: 80px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonContainer button:hover{
+    color:#f0f0f0;
+}

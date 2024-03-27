@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react';
 import Navbar from '../elementos/navbar';
+import CardRestaurantes from '../elementos/CardRestaurantes';
+import { Link } from "react-router-dom"
+import styles from "./telaRestaurante.module.css"
 
 function TelaRestaurantes() {
     const [restaurantes, setRestaurantes] = useState([]);
 
- 
+
+
+    useEffect(() => {
         async function fetchRestaurantes() {
             try {
-                const response = await fetch('http://127.0.0.1:8000/restaurante');
-                if (!response.ok) {
-                    throw new Error('Não foi possível carregar os restaurantes');
-                }
+                const response = await fetch('http://localhost:8000/restaurante');
                 const data = await response.json();
                 setRestaurantes(data);
             } catch (error) {
@@ -18,17 +20,16 @@ function TelaRestaurantes() {
             }
         }
 
-        fetchRestaurantes();
+        fetchRestaurantes(); 
+    }, []); 
  
     return (
         <div>
             <Navbar />
-            <h2>Restaurantes</h2>
-            <ul>
-                {restaurantes.map(restaurante => (
-                    <li key={restaurante.id}>{restaurante.nome}</li>
-                ))}
-            </ul>
+            <div className={styles.linkContainer}>
+                <Link to='/criar-restaurante' className={styles.link}>Criar Restaurante</Link>
+            </div>
+            <CardRestaurantes restaurantes={restaurantes}/>
         </div>
     );
 }

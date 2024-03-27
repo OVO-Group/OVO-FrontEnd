@@ -1,0 +1,21 @@
+.button {
+    background-color: white; /* Cor de fundo branca */
+    border: 2px solid #FFD700; /* Bordas amarelas */
+    color: #FFD700; /* Cor do texto amarela */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 15px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    border-radius: 100px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #fdfae2; /* Cor de fundo amarela quando passa o mouse */
+    color: #FFD700;/* Cor do texto branca quando passa o mouse */
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+}
