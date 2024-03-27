@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import Navbar from '../elementos/navbar';
-import CardRestaurantes from '../elementos/CardRestaurantes';
+import Navbar from '../../elementos/navbar';
+import CardRestaurantes from '../../elementos/CardRestaurantes';
 import { Link } from "react-router-dom"
 import styles from "./telaRestaurante.module.css"
 

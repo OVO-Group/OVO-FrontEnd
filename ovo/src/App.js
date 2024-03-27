@@ -7,9 +7,10 @@ import TelaCadastroGoogle from './components/paginas/telaEntrarGoogle';
 import TelaCadastroCelular from './components/paginas/telaEntrarCelular';
 import TelaCadastroEmail from './components/paginas/telaEntrarEmail';
 import TelaCodigoEmail from './components/paginas/telaCodigoEmail';
-import TelaRestaurantes from './components/paginas/telaRestaurantes';
+import TelaRestaurantes from './components/paginas/paginasDeListagem/telaRestaurantes';
 import TelaCriarRestaurante from './components/paginas/paginasDeCriacao/telaCriarRestaurante';
 import TelaEditarRestaurante from './components/paginas/paginasDeEdicao/telaEditarRestaurante';
+import TelaItensRestaurante from './components/paginas/paginasDeListagem/telaItensRestaurante';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/restaurantes" element={<TelaRestaurantes />}/>
                     <Route path="/criar-restaurante" element={<TelaCriarRestaurante />}/>
                     <Route path="/editar-restaurante" element={<TelaEditarRestaurante />}/>
+                    <Route path="/restaurante/:id_restaurante" element={<TelaItensRestaurante />}/>
                 </Routes>
         </Router>
     </div>

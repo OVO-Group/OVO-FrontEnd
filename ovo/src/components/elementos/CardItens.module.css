@@ -20,12 +20,12 @@
 }
 
 
-.restaurantes {
+.produtos {
     list-style-type: none;
     padding: 0;
 }
 
-.restaurantesItem {
+.produtosItem {
 
     background-color: #ffffff; /* Cor de fundo do cartão */
     border: 1px solid #ffa600;
