@@ -1,7 +1,4 @@
 function ExcluirRestaurante({id_restaurante}){
-    alert(id_restaurante)
-
-
     fetch(`http://localhost:8000/restaurante/deletar/${id_restaurante}`, {
     method: 'DELETE',
 })
@@ -10,7 +7,7 @@ function ExcluirRestaurante({id_restaurante}){
         throw new Error('Erro ao enviar requisição');
     }
     console.log('Restaurante excluído com sucesso');
-    // Faça qualquer ação adicional após a exclusão, se necessário
+    window.location.reload();
 })
 .catch(error => {
     console.error('Erro ao excluir restaurante:', error);

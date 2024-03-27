@@ -1,8 +1,12 @@
 import styles from "./CardRestaurantes.module.css"
 import BotaoAcionador from "../eventos/botaoAcionador"
 import ExcluirRestaurante from "../eventos/excluirRestaurante"
+import TelaEditarRestaurante from "../paginas/paginasDeEdicao/telaEditarRestaurante"
+import { useNavigate } from "react-router-dom"
 
 function CardRestaurantes({restaurantes}) {
+    const navigate = useNavigate();
+
     return(
         <div className={styles.container}>
             <ul className={styles.restaurantes}>
@@ -12,7 +16,7 @@ function CardRestaurantes({restaurantes}) {
                             <p>{restaurante.sobre}</p>
                             <div className={styles.buttonContainer}>
                             <BotaoAcionador event={() => ExcluirRestaurante({ id_restaurante: restaurante.id_restaurante })} text='Excluir' />
-                            <BotaoAcionador text='Editar'/>
+                            <BotaoAcionador event={() => navigate('/editar-restaurante', { state: { id_restaurante: restaurante.id_restaurante } })} text='Editar'/>
                             </div>
                             
                     </li>

@@ -9,6 +9,7 @@ import TelaCadastroEmail from './components/paginas/telaEntrarEmail';
 import TelaCodigoEmail from './components/paginas/telaCodigoEmail';
 import TelaRestaurantes from './components/paginas/telaRestaurantes';
 import TelaCriarRestaurante from './components/paginas/paginasDeCriacao/telaCriarRestaurante';
+import TelaEditarRestaurante from './components/paginas/paginasDeEdicao/telaEditarRestaurante';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                     <Route path="/codigo-email" element={<TelaCodigoEmail />} />
                     <Route path="/restaurantes" element={<TelaRestaurantes />}/>
                     <Route path="/criar-restaurante" element={<TelaCriarRestaurante />}/>
+                    <Route path="/editar-restaurante" element={<TelaEditarRestaurante />}/>
                 </Routes>
         </Router>
     </div>
